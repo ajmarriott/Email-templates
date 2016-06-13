@@ -111,51 +111,24 @@
         </td>
       </tr>-->
       <!-- end email header -->
-      {{each(index, newsItem) News}}
       <tr>
         <td colspan="2">
-          <table class="article" style="{{if index != News.length - 1 }}border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #c0c0c0;{{/if}} padding-bottom: 10px; {{if index == 0 }} padding-top: 10px; border-top-color: #c0c0c0; border-top-width: 3px; border-top-style: solid; {{/if}}">
-            {{if index == 0 }}
-            <!-- NEWS HEADER -->
-            <tr>
-              <td colspan="2">
-                <p style="font-family:arial; color: rgb(73, 73, 73); margin-bottom: 10px; font-weight: bold;">News</p>
-              </td>
-            </tr>
-            <!-- END NEWS HEADER -->
-            {{/if}}
-            <tr>
-              <td valign="top" style="margin-right: 10px;">
-                <a href="${newsItem.Link}"><img width=150 style="max-width: 80px; height: auto; margin-right: 5px;" src="${newsItem.Thumbnail}" /></a>
-              </td>
-              <td>
-                <p style="font-family:arial;">
-                  <a style="font-weight: bold; color: rgb(73, 73, 73); text-decoration: none;" href="${newsItem.Link}">${newsItem.Headline}</a>
-                </p>
-                <p style="font-family:arial; font-size: 0.8em;">
-                  <a style="color: rgb(73, 73, 73); text-decoration: none;" href="${newsItem.Link}">${newsItem.Summary}</a>
-                </p>
-              </td>
-            </tr>
-          </table>
+          <p>Fusce at odio vitae nisi aliquam tincidunt. Quisque sagittis volutpat congue. Morbi ornare vulputate libero sed posuere. Nam tristique tellus quis massa fringilla, vitae posuere nisl porttitor. Pellentesque vel pharetra turpis. Nulla varius nibh non magna venenatis ultrices consectetur eu velit. Etiam vitae ligula est. Donec sit amet varius mauris. Aenean hendrerit, quam quis consectetur mollis, arcu libero vehicula est, nec tempor nibh metus nec eros. Donec id turpis nunc. Etiam vel lobortis massa.</p>
+          <p>Donec turpis libero, mattis sed vulputate id, dictum et lorem. Pellentesque in nibh vitae felis tempus ullamcorper nec in nibh. Integer posuere nec risus eget tempus. Duis laoreet euismod sodales. Nam porttitor leo at ligula eleifend lacinia. Phasellus metus ipsum, posuere vitae eros sit amet, lacinia sodales nulla. Praesent congue sagittis eros, facilisis sodales diam varius vel. Cras interdum turpis dui, sit amet fringilla metus interdum a. Mauris tempor egestas dui in cursus. Pellentesque sit amet ipsum velit. Cras hendrerit tellus velit, in efficitur lorem feugiat sed. Nulla ac leo enim. Nam pellentesque ultrices ex vitae malesuada.</p>
+          <P>Etiam vulputate turpis venenatis risus tincidunt, ac semper sapien auctor. Cras condimentum egestas nibh, nec aliquam metus molestie id. Vivamus tempus dictum odio, at efficitur leo ullamcorper id. Proin tincidunt ultrices justo, ac maximus ex hendrerit ac. Ut blandit tortor vel porttitor volutpat. Duis mollis elit id ante tempor vestibulum. Cras in bibendum eros. Quisque eget erat non odio convallis fringilla a vel ante. Duis vitae convallis velit. Curabitur eget vulputate odio. In convallis, magna vitae hendrerit ornare, velit nisl mattis ex, in commodo nisi quam rutrum odio. Morbi vitae massa nec justo placerat tempus nec ut elit. Suspendisse potenti. Donec eu sapien mi. Morbi sit amet dui ut lorem consequat fermentum. Nunc faucibus porta felis vitae congue.</p>
+            <ul>
+              <li><a href="#">Donec turpis libero, mattis sed vulputate id, dictum et lorem.</a> - Nam porttitor leo at ligula eleifend lacinia. Phasellus metus ipsum, posuere vitae eros sit amet, lacinia sodales nulla. </li>
+              <li><a href="#">Etiam vulputate turpis venenatis risus tincidunt, ac semper sapien auctor.</a> - Nam porttitor leo at ligula eleifend lacinia. Phasellus metus ipsum, posuere vitae eros sit amet, lacinia sodales nulla. </li>
+              <li><a href="#">Duis mollis elit id ante tempor vestibulum.</a> - Nam porttitor leo at ligula eleifend lacinia. Phasellus metus ipsum, posuere vitae eros sit amet, lacinia sodales nulla. </li>
+              <li><a href="#">Quisque eget erat non odio convallis fringilla a vel ante.</a> - Praesent congue sagittis eros, facilisis sodales diam varius vel.</li>
         </td>
       </tr>
-      {{/each}}
 
       <!-- FEATURES -->
       {{each(index, featureItem) Features}}
       <tr>
         <td colspan="2">
           <table class="article" style="{{if index != Features.length - 1 }}border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #c0c0c0;{{/if}} padding-bottom: 10px; padding-top: 10px; {{if index == 0 }} padding-top: 10px; border-top-color: #c0c0c0; border-top-width: 3px; border-top-style: solid; {{/if}}">
-            {{if index == 0 }}
-            <!-- NEWS HEADER -->
-            <tr>
-              <td colspan="2">
-                <p style="font-family:arial; color: rgb(73, 73, 73); margin-bottom: 10px; font-weight: bold;">Features</p>
-              </td>
-            </tr>
-            <!-- END NEWS HEADER -->
-            {{/if}}
             <tr>
               <td valign="top" style="margin-right: 10px;">
                 <a href="${featureItem.Link}"><img width=150 style="max-width: 80px; height: auto; margin-right: 5px;" src="${featureItem.Thumbnail}" /></a>
@@ -173,29 +146,6 @@
         </td>
       </tr>
       {{/each}}
-      <!-- EXTRAS -->
-      <tr style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #c0c0c0; ">
-        <td colspan="1" style="vertical-align: top; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #c0c0c0; padding-bottom: 10px; padding-top: 10px; width: 50%; padding-right: 5px; border-top-color: #c0c0c0; border-top-width: 3px; border-top-style: solid;">
-          {{each(index, leftItem) LeftSections}} {{if leftItem.Link == null }}
-          <!--START BLOCK -->
-          <p style="font-family:arial; color: rgb(73, 73, 73); margin-bottom: 10px; font-weight: bold;">${leftItem.Headline}</p>
-          {{else}}
-          <p>
-            <a style="font-family:arial; color: rgb(73, 73, 73); font-size: 0.8em; text-decoration: none;" href="${leftItem.Link}">${leftItem.Headline}</a>
-          </p>
-          {{/if}} {{/each}}
-        </td>
-        <td colspan="1" style="vertical-align: top; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #c0c0c0; padding-bottom: 10px; padding-top: 10px; padding-left: 5px; width: 50%; border-top-color: #c0c0c0; border-top-width: 3px; border-top-style: solid;">
-          {{each(index, rightItem) RightSections}} {{if rightItem.Link == null }}
-          <!--START BLOCK -->
-          <p style="font-family:arial; color: rgb(73, 73, 73); margin-bottom: 10px; font-weight: bold;">${rightItem.Headline}</p>
-          {{else}}
-          <p>
-            <a style="font-family:arial; color: rgb(73, 73, 73); font-size: 0.8em; text-decoration: none;" href="${rightItem.Link}">${rightItem.Headline}</a>
-          </p>
-          {{/if}} {{/each}}
-        </td>
-      </tr>
       <!-- PROBLEMS AND UPDATES -->
       <tr>
         <td class="additionalContent" colspan="2" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #c0c0c0; padding-bottom: 10px; padding-top: 10px;">
