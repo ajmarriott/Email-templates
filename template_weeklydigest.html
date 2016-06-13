@@ -1,0 +1,223 @@
+<html>
+
+<head>
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  <style>
+    .fake_css {
+      width: 100%;
+      display: block;
+      -webkit-text-size-adjust: none;
+      margin: 1em 0;
+      color: black;
+      text-decoration: none;
+      border-bottom: none;
+      background: none;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      background: none;
+      border-bottom: thin;
+      border-bottom-style: double;
+      background-repeat: repeat;
+      border-left-color: #C06;
+      background-attachment: scroll;
+      border: thin;
+      page-break-before: auto;
+      page-break-before: avoid;
+      page-break-inside: inherit;
+      azimuth: center-left;
+      vertical-align: inherit;
+      font-stretch: extra-condensed;
+      font-size-adjust: none;
+      list-style-image: none;
+      counter-reset: none;
+      letter-spacing: normal;
+      empty-cells: inherit;
+      elevation: higher;
+    }
+
+    table.main {
+      width: 500px;
+    }
+
+    @media screen and (max-width: 650px) {
+      table.main {
+        max-width: 100%;
+        width: 100% !important;
+        min-width: initial !important;
+      }
+      table.article img {
+        width: 80px;
+        height: auto;
+      }
+      .pubTitle {
+        font-size: 1.3em !important;
+      }
+      .additionalContent {
+        width: 100% !important;
+      }
+    }
+  </style>
+  <!--[if gt mso 9]>
+    <style>
+    table.main {
+      width: 600px;
+      background-color: #ffffff;
+      margin-top: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+    }
+    body {
+      background-color: #c0c0c0;
+    }
+
+    </style>
+    <![endif]-->
+</head>
+
+<body>
+  <table align="center" class="main" style="margin: 0 auto; min-width: 500px;" cellspacing="0">
+    <!-- email header -->
+    <tbody>
+      <tr style="background-color: #fff;">
+        <td colspan="2" align="left">
+          <a href="http://www.energyintel.com/">
+            <img class="logo" width="206" height="54" style="max-width: 206px;" src="http://www.energyintel.com/_layouts/eig/images/new-ats-email-logo.jpg" alt="Your latest issue of ${PublicationName} is attached - Energy Intelligence - ${IssueDate}" />
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" valign="top">
+          <p style="font-family:arial; font-weight: bold; margin-bottom: 5px; margin-top: 10px;">
+            <a style="color: rgb(73, 73, 73); text-decoration: none; font-size: 1.5em;" class="pubTitle" href="${PublicationLink}">${PublicationName}</a>
+          </p>
+          <p style="font-family:arial; font-weight: bold; margin-bottom: 0px; margin-top: 0; font-size: 0.8em; color: rgb(73, 73, 73);">${IssueDate}</p>
+          <p></p>
+          <p></p>
+
+        </td>
+      </tr>
+      <!--<tr>
+        <td colspan="2" valign="top" style="border-top-color: #c0c0c0; border-top-width: 3px; border-top-style: solid; padding-top: 20px;">
+          <p></p>
+          <p style="text-align: center;">
+            <a href="http://www2.energyintel.com/l/19202/2016-01-11/9qphnb?utm_campaign=Janwebinar&utm_medium=emailalert&utm_source=podcast-page&utm_content=html-version"><img src="http://www2.energyintel.com/l/19202/2016-01-12/9qvxb4/19202/138579/f_VRT_JAN2016_email300x250.jpg" /></a>
+          </p>
+        </td>
+      </tr>-->
+      <!-- end email header -->
+      {{each(index, newsItem) News}}
+      <tr>
+        <td colspan="2">
+          <table class="article" style="{{if index != News.length - 1 }}border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #c0c0c0;{{/if}} padding-bottom: 10px; {{if index == 0 }} padding-top: 10px; border-top-color: #c0c0c0; border-top-width: 3px; border-top-style: solid; {{/if}}">
+            {{if index == 0 }}
+            <!-- NEWS HEADER -->
+            <tr>
+              <td colspan="2">
+                <p style="font-family:arial; color: rgb(73, 73, 73); margin-bottom: 10px; font-weight: bold;">News</p>
+              </td>
+            </tr>
+            <!-- END NEWS HEADER -->
+            {{/if}}
+            <tr>
+              <td valign="top" style="margin-right: 10px;">
+                <a href="${newsItem.Link}"><img width=150 style="max-width: 80px; height: auto; margin-right: 5px;" src="${newsItem.Thumbnail}" /></a>
+              </td>
+              <td>
+                <p style="font-family:arial;">
+                  <a style="font-weight: bold; color: rgb(73, 73, 73); text-decoration: none;" href="${newsItem.Link}">${newsItem.Headline}</a>
+                </p>
+                <p style="font-family:arial; font-size: 0.8em;">
+                  <a style="color: rgb(73, 73, 73); text-decoration: none;" href="${newsItem.Link}">${newsItem.Summary}</a>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      {{/each}}
+
+      <!-- FEATURES -->
+      {{each(index, featureItem) Features}}
+      <tr>
+        <td colspan="2">
+          <table class="article" style="{{if index != Features.length - 1 }}border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #c0c0c0;{{/if}} padding-bottom: 10px; padding-top: 10px; {{if index == 0 }} padding-top: 10px; border-top-color: #c0c0c0; border-top-width: 3px; border-top-style: solid; {{/if}}">
+            {{if index == 0 }}
+            <!-- NEWS HEADER -->
+            <tr>
+              <td colspan="2">
+                <p style="font-family:arial; color: rgb(73, 73, 73); margin-bottom: 10px; font-weight: bold;">Features</p>
+              </td>
+            </tr>
+            <!-- END NEWS HEADER -->
+            {{/if}}
+            <tr>
+              <td valign="top" style="margin-right: 10px;">
+                <a href="${featureItem.Link}"><img width=150 style="max-width: 80px; height: auto; margin-right: 5px;" src="${featureItem.Thumbnail}" /></a>
+              </td>
+              <td>
+                <p style="font-family:arial;">
+                  <a style="font-weight: bold; color: rgb(73, 73, 73); text-decoration: none;" href="${featureItem.Link}">${featureItem.Headline}</a>
+                </p>
+                <p style="font-family:arial; font-size: 0.8em;">
+                  <a style="color: rgb(73, 73, 73); text-decoration: none;" href="${featureItem.Link}">${featureItem.Summary}</a>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      {{/each}}
+      <!-- EXTRAS -->
+      <tr style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #c0c0c0; ">
+        <td colspan="1" style="vertical-align: top; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #c0c0c0; padding-bottom: 10px; padding-top: 10px; width: 50%; padding-right: 5px; border-top-color: #c0c0c0; border-top-width: 3px; border-top-style: solid;">
+          {{each(index, leftItem) LeftSections}} {{if leftItem.Link == null }}
+          <!--START BLOCK -->
+          <p style="font-family:arial; color: rgb(73, 73, 73); margin-bottom: 10px; font-weight: bold;">${leftItem.Headline}</p>
+          {{else}}
+          <p>
+            <a style="font-family:arial; color: rgb(73, 73, 73); font-size: 0.8em; text-decoration: none;" href="${leftItem.Link}">${leftItem.Headline}</a>
+          </p>
+          {{/if}} {{/each}}
+        </td>
+        <td colspan="1" style="vertical-align: top; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #c0c0c0; padding-bottom: 10px; padding-top: 10px; padding-left: 5px; width: 50%; border-top-color: #c0c0c0; border-top-width: 3px; border-top-style: solid;">
+          {{each(index, rightItem) RightSections}} {{if rightItem.Link == null }}
+          <!--START BLOCK -->
+          <p style="font-family:arial; color: rgb(73, 73, 73); margin-bottom: 10px; font-weight: bold;">${rightItem.Headline}</p>
+          {{else}}
+          <p>
+            <a style="font-family:arial; color: rgb(73, 73, 73); font-size: 0.8em; text-decoration: none;" href="${rightItem.Link}">${rightItem.Headline}</a>
+          </p>
+          {{/if}} {{/each}}
+        </td>
+      </tr>
+      <!-- PROBLEMS AND UPDATES -->
+      <tr>
+        <td class="additionalContent" colspan="2" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #c0c0c0; padding-bottom: 10px; padding-top: 10px;">
+          <p>
+            <a style="font-family:arial; color: rgb(73, 73, 73); margin-bottom: 10px; font-weight: bold; text-decoration: none;" href="mailto://customerservice@energyintel.com">Contact Us</a>
+          </p>
+        </td>
+      </tr>
+      <!-- END PROBLEMS AND UPDATES -->
+      <!-- COPYRIGHT AND FOOTER -->
+      <tr>
+        <td class="additionalContent" colspan="2" style="border-bottom: 1px solid #c0c0c0; padding-bottom: 10px; padding-top: 10px;">
+          <p style="font-family:arial; font-size: 0.7em; color: #000;">Copyright &copy; 2016 Energy Intelligence Group, Inc. All rights reserved.</p>
+          <p style="font-family:arial; font-size: 0.7em; color: #000;">
+            Reproduction or distribution internally or externally in any manner (photostatically, electronically, or via facsimile), including by sharing printed copies, or forwarding or posting on local- and wide-area networks and intranets, or sharing user name
+            and password, is strictly prohibited without appropriate license from EIG. Contact <a href="mailto://customerservice@energyintel.com">customerservice@energyintel.com</a> for more information.
+          </p>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
