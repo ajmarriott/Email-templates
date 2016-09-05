@@ -85,22 +85,11 @@
     <!-- email header -->
     <tbody>
       <tr style="background-color: #fff;">
+        <!-- left slot for logo -->
         <td colspan="2" align="left">
           <a href="http://www.energyintel.com/">
-            <img class="logo" width="206" height="54" style="max-width: 206px;" src="http://www.energyintel.com/_layouts/eig/images/new-ats-email-logo.jpg" alt="Your latest issue of ${PublicationName} is attached - Energy Intelligence - ${IssueDate}" />
+            <img src="header-weeklyreview.jpg" alt="Energy Intelligence's Weekly Review" style="max-width: 100%;" />
           </a>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2" valign="top">
-          <p style="font-family:arial; font-weight: bold; margin-bottom: 5px; margin-top: 10px;">
-            <a style="color: rgb(73, 73, 73); text-decoration: none; font-size: 1.5em;" class="pubTitle" href="${PublicationLink}">${PublicationName}</a>
-          </p>
-          <p style="font-family:arial; font-weight: bold; margin-bottom: 0px; margin-top: 0; font-size: 0.8em; color: rgb(73, 73, 73);">${IssueDate}</p>
-          <p></p>
-          <p></p>
-
-        </td>
       </tr>
       <!--<tr>
         <td colspan="2" valign="top" style="border-top-color: #c0c0c0; border-top-width: 3px; border-top-style: solid; padding-top: 20px;">
@@ -112,23 +101,31 @@
       </tr>-->
       <!-- end email header -->
       <tr>
-        <td colspan="2">
+        <!-- Issue date -->
+        <td style="padding-top: 10px; padding-right: 5px; padding-left: 5px;">
+          <p align="left" style="font-family:arial; font-weight: bold; color: rgb(73, 73, 73); text-decoration: none;">Friday, 27 March 2016</p>
+        </td>
+      </tr>
+      <!-- Written copy -->
+      <tr>
+        <td colspan="2" style="padding-top: 10px; padding-right: 5px; padding-left: 5px; font-family: arial; font-size: 14px;">
           <p>Fusce at odio vitae nisi aliquam tincidunt. Quisque sagittis volutpat congue. Morbi ornare vulputate libero sed posuere. Nam tristique tellus quis massa fringilla, vitae posuere nisl porttitor. Pellentesque vel pharetra turpis. Nulla varius nibh non magna venenatis ultrices consectetur eu velit. Etiam vitae ligula est. Donec sit amet varius mauris. Aenean hendrerit, quam quis consectetur mollis, arcu libero vehicula est, nec tempor nibh metus nec eros. Donec id turpis nunc. Etiam vel lobortis massa.</p>
           <p>Donec turpis libero, mattis sed vulputate id, dictum et lorem. Pellentesque in nibh vitae felis tempus ullamcorper nec in nibh. Integer posuere nec risus eget tempus. Duis laoreet euismod sodales. Nam porttitor leo at ligula eleifend lacinia. Phasellus metus ipsum, posuere vitae eros sit amet, lacinia sodales nulla. Praesent congue sagittis eros, facilisis sodales diam varius vel. Cras interdum turpis dui, sit amet fringilla metus interdum a. Mauris tempor egestas dui in cursus. Pellentesque sit amet ipsum velit. Cras hendrerit tellus velit, in efficitur lorem feugiat sed. Nulla ac leo enim. Nam pellentesque ultrices ex vitae malesuada.</p>
           <P>Etiam vulputate turpis venenatis risus tincidunt, ac semper sapien auctor. Cras condimentum egestas nibh, nec aliquam metus molestie id. Vivamus tempus dictum odio, at efficitur leo ullamcorper id. Proin tincidunt ultrices justo, ac maximus ex hendrerit ac. Ut blandit tortor vel porttitor volutpat. Duis mollis elit id ante tempor vestibulum. Cras in bibendum eros. Quisque eget erat non odio convallis fringilla a vel ante. Duis vitae convallis velit. Curabitur eget vulputate odio. In convallis, magna vitae hendrerit ornare, velit nisl mattis ex, in commodo nisi quam rutrum odio. Morbi vitae massa nec justo placerat tempus nec ut elit. Suspendisse potenti. Donec eu sapien mi. Morbi sit amet dui ut lorem consequat fermentum. Nunc faucibus porta felis vitae congue.</p>
-            <ul>
-              <li><a href="#">Donec turpis libero, mattis sed vulputate id, dictum et lorem.</a> - Nam porttitor leo at ligula eleifend lacinia. Phasellus metus ipsum, posuere vitae eros sit amet, lacinia sodales nulla. </li>
-              <li><a href="#">Etiam vulputate turpis venenatis risus tincidunt, ac semper sapien auctor.</a> - Nam porttitor leo at ligula eleifend lacinia. Phasellus metus ipsum, posuere vitae eros sit amet, lacinia sodales nulla. </li>
-              <li><a href="#">Duis mollis elit id ante tempor vestibulum.</a> - Nam porttitor leo at ligula eleifend lacinia. Phasellus metus ipsum, posuere vitae eros sit amet, lacinia sodales nulla. </li>
-              <li><a href="#">Quisque eget erat non odio convallis fringilla a vel ante.</a> - Praesent congue sagittis eros, facilisis sodales diam varius vel.</li>
         </td>
       </tr>
-
+      <!-- Related articles header -->
+      <tr>
+        <!-- Issue date -->
+        <td style="padding-top: 30px; padding-right: 5px; padding-left: 5px; border-bottom-color: #c0c0c0; border-bottom-width: 3px; border-bottom-style: solid;">
+          <p align="left" style="font-family:arial; font-weight: bold; color: rgb(73, 73, 73); text-decoration: none;">Related articles</p>
+        </td>
+      </tr>
       <!-- FEATURES -->
       {{each(index, featureItem) Features}}
       <tr>
-        <td colspan="2">
-          <table class="article" style="{{if index != Features.length - 1 }}border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #c0c0c0;{{/if}} padding-bottom: 10px; padding-top: 10px; {{if index == 0 }} padding-top: 10px; border-top-color: #c0c0c0; border-top-width: 3px; border-top-style: solid; {{/if}}">
+        <td style="background: #e8e8e8;" colspan="2">
+          <table class="article" style="padding-bottom: 10px; padding-top: 10px; {{if index == 0 }} padding-top: 10px;  {{/if}}">
             <tr>
               <td valign="top" style="margin-right: 10px;">
                 <a href="${featureItem.Link}"><img width=150 style="max-width: 80px; height: auto; margin-right: 5px;" src="${featureItem.Thumbnail}" /></a>
@@ -143,6 +140,11 @@
               </td>
             </tr>
           </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          &nbsp;
         </td>
       </tr>
       {{/each}}
