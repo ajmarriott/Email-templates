@@ -1,236 +1,173 @@
 <html>
 
 <head>
-  <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ <style>
+  .fake_css {
+   width: 100%;
+   display: block;
+   -webkit-text-size-adjust: none;
+   margin: 1em 0;
+   color: black;
+   text-decoration: none;
+   border-bottom: none;
+   background: none;
+   padding-bottom: 0px;
+   padding-left: 0px;
+   padding-right: 0px;
+   background: none;
+   border-bottom: thin;
+   border-bottom-style: double;
+   background-repeat: repeat;
+   border-left-color: #C06;
+   background-attachment: scroll;
+   border: thin;
+   page-break-before: auto;
+   page-break-before: avoid;
+   page-break-inside: inherit;
+   azimuth: center-left;
+   vertical-align: inherit;
+   font-stretch: extra-condensed;
+   font-size-adjust: none;
+   list-style-image: none;
+   counter-reset: none;
+   letter-spacing: normal;
+   empty-cells: inherit;
+   elevation: higher;
+  }
+
+  table.main {
+   width: 500px;
+  }
+
+  @media screen and (max-width: 650px) {
+   table.main {
+    max-width: 100%;
+    width: 100% !important;
+    min-width: initial !important;
+   }
+   table.article img {
+    width: 80px;
+    height: auto;
+   }
+   .pubTitle {
+    font-size: 1.3em !important;
+   }
+   .additionalContent {
+    width: 100% !important;
+   }
+  }
+ </style>
+ <!--[if gt mso 9]>
   <style>
-    .fake_css {
-      width: 100%;
-      display: block;
-      -webkit-text-size-adjust: none;
-      margin: 1em 0;
-      color: black;
-      text-decoration: none;
-      border-bottom: none;
-      background: none;
-      padding-bottom: 0px;
-      padding-left: 0px;
-      padding-right: 0px;
-      background: none;
-      border-bottom: thin;
-      border-bottom-style: double;
-      background-repeat: repeat;
-      border-left-color: #C06;
-      background-attachment: scroll;
-      border: thin;
-      page-break-before: auto;
-      page-break-before: avoid;
-      page-break-inside: inherit;
-      azimuth: center-left;
-      vertical-align: inherit;
-      font-stretch: extra-condensed;
-      font-size-adjust: none;
-      list-style-image: none;
-      counter-reset: none;
-      letter-spacing: normal;
-      empty-cells: inherit;
-      elevation: higher;
-    }
+  table.main {
+   width: 600px;
+   background-color: #ffffff;
+   margin-top: 10px;
+   margin-right: 10px;
+   margin-bottom: 10px;
+   margin-left: 10px;
+   padding-top: 10px;
+   padding-right: 10px;
+   padding-bottom: 10px;
+   padding-left: 10px;
+  }
+  body {
+   background-color: #c0c0c0;
+  }
 
-    table.main {
-      width: 500px;
-    }
-
-    @media screen and (max-width: 650px) {
-      table.main {
-        max-width: 100%;
-        width: 100% !important;
-        min-width: initial !important;
-      }
-      table.article img {
-        width: 80px;
-        height: auto;
-      }
-      .pubTitle {
-        font-size: 1.3em !important;
-      }
-      .additionalContent {
-        width: 100% !important;
-      }
-    }
   </style>
-  <!--[if gt mso 9]>
-    <style>
-    table.main {
-      width: 600px;
-      background-color: #ffffff;
-      margin-top: 10px;
-      margin-right: 10px;
-      margin-bottom: 10px;
-      margin-left: 10px;
-      padding-top: 10px;
-      padding-right: 10px;
-      padding-bottom: 10px;
-      padding-left: 10px;
-    }
-    body {
-      background-color: #c0c0c0;
-    }
-
-    </style>
-    <![endif]-->
+  <![endif]-->
 </head>
 
 <body>
-  <table align="center" class="main" style="margin: 0 auto; min-width: 500px;" cellspacing="0">
-    <!-- email header -->
-    <tbody>
-      <tr style="background-color: #fff;">
-        <!-- left slot for logo -->
-        <td colspan="3" align="left">
-          <a href="http://www.energyintel.com/">
-            <img src="header-weeklyreview.jpg" alt="Energy Intelligence's Weekly Review" style="max-width: 100%;" />
-          </a>
-      </tr>
-      <!--<tr>
-        <td colspan="3" valign="top" style="border-top-color: #c0c0c0; border-top-width: 3px; border-top-style: solid; padding-top: 20px;">
-          <p></p>
-          <p style="text-align: center;">
-            <a href="http://www2.energyintel.com/l/19202/2016-01-11/9qphnb?utm_campaign=Janwebinar&utm_medium=emailalert&utm_source=podcast-page&utm_content=html-version"><img src="http://www2.energyintel.com/l/19202/2016-01-12/9qvxb4/19202/138579/f_VRT_JAN2016_email300x250.jpg" /></a>
-          </p>
-        </td>
-      </tr>-->
-      <!-- end email header -->
-      <tr>
-        <!-- Issue date -->
-        <td colspan="3" style="padding-top: 10px; padding-right: 5px; padding-left: 5px;">
-          <p align="left" style="font-family:arial;font-weight: bold;color: rgb(73, 73, 73);text-decoration: none;text-align: right;font-size: 0.8em;">Friday, 27 March 2016</p>
-        </td>
-      </tr>
-      <!-- Written copy -->
-      <tr>
-        <td colspan="3" style="padding-top: 10px; padding-right: 5px; padding-left: 5px; font-family: arial; font-size: 14px;">
-          <p>Fusce at odio vitae nisi aliquam tincidunt. Quisque sagittis volutpat congue. Morbi ornare vulputate libero sed posuere. Nam tristique tellus quis massa fringilla, vitae posuere nisl porttitor. Pellentesque vel pharetra turpis. Nulla varius nibh non magna venenatis ultrices consectetur eu velit. Etiam vitae ligula est. Donec sit amet varius mauris. Aenean hendrerit, quam quis consectetur mollis, arcu libero vehicula est, nec tempor nibh metus nec eros. Donec id turpis nunc. Etiam vel lobortis massa.</p>
-          <p>Donec turpis libero, mattis sed vulputate id, dictum et lorem. Pellentesque in nibh vitae felis tempus ullamcorper nec in nibh. Integer posuere nec risus eget tempus. Duis laoreet euismod sodales. Nam porttitor leo at ligula eleifend lacinia. Phasellus metus ipsum, posuere vitae eros sit amet, lacinia sodales nulla. Praesent congue sagittis eros, facilisis sodales diam varius vel. Cras interdum turpis dui, sit amet fringilla metus interdum a. Mauris tempor egestas dui in cursus. Pellentesque sit amet ipsum velit. Cras hendrerit tellus velit, in efficitur lorem feugiat sed. Nulla ac leo enim. Nam pellentesque ultrices ex vitae malesuada.</p>
-          <P>Etiam vulputate turpis venenatis risus tincidunt, ac semper sapien auctor. Cras condimentum egestas nibh, nec aliquam metus molestie id. Vivamus tempus dictum odio, at efficitur leo ullamcorper id. Proin tincidunt ultrices justo, ac maximus ex hendrerit ac. Ut blandit tortor vel porttitor volutpat. Duis mollis elit id ante tempor vestibulum. Cras in bibendum eros. Quisque eget erat non odio convallis fringilla a vel ante. Duis vitae convallis velit. Curabitur eget vulputate odio. In convallis, magna vitae hendrerit ornare, velit nisl mattis ex, in commodo nisi quam rutrum odio. Morbi vitae massa nec justo placerat tempus nec ut elit. Suspendisse potenti. Donec eu sapien mi. Morbi sit amet dui ut lorem consequat fermentum. Nunc faucibus porta felis vitae congue.</p>
-        </td>
-      </tr>
-      <!-- Related articles header -->
-      <tr>
-        <!-- Issue date -->
-        <td colspan="3" style="padding-top: 30px; padding-right: 5px; padding-left: 5px; border-bottom-color: #c0c0c0; border-bottom-width: 3px; border-bottom-style: solid;">
-          <p align="left" style="font-family:arial; font-weight: bold; color: rgb(73, 73, 73); text-decoration: none;">Related articles</p>
-        </td>
-      </tr>
-      <!-- FEATURES -->
-      {{each(index, featureItem) Features}}
-      <tr>
-        <td colspan="3">
-          &nbsp;
-        </td>
-      </tr>
-      <tr>
-        <td width=10>&nbsp;</td>
-        <td style="background: #e8e8e8; border-width: 1px; border-color: #dadada; border-style: solid;">
-          <table class="article" style="padding-bottom: 10px; padding-top: 10px; {{if index == 0 }} padding-top: 10px;  {{/if}}">
-            <tr>
-              <td valign="top" style="margin-right: 10px;">
-                <a href="${featureItem.Link}"><img width=150 style="max-width: 80px; height: auto; margin-right: 5px;" src="http://www.energyintel.com/_LAYOUTS/Eig/Images/WPSImages/567035.jpg" /></a>
-              </td>
-              <td>
-                <p style="font-family:arial;">
-                  <a style="font-weight: bold; color: rgb(73, 73, 73); font-size: 10px; text-decoration: none;" href="${featureItem.Link}">Petroleum Intelligence Weekly</a>
-                </p>
-                <p style="font-family:arial;">
-                  <a style="font-weight: bold; color: rgb(73, 73, 73); text-decoration: none;" href="${featureItem.Link}">Japan Warms to Russian Arctic LNG</a>
-                </p>
-                <p style="font-family:arial; font-size: 0.8em;">
-                  <a style="color: rgb(73, 73, 73); text-decoration: none;" href="${featureItem.Link}">The Japan Bank for International Cooperation will provide a $400 million loan to Novatek's flagship $27 billion Yamal LNG scheme and is expected to ...</a>
-                </p>
-              </td>
-            </tr>
-          </table>
-        </td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td colspan="3">
-          &nbsp;
-        </td>
-      </tr>
-      {{/each}}
-      <tr>
-        <td width=10>&nbsp;</td>
-        <td style="background: #e8e8e8; border-width: 1px; border-color: #dadada; border-style: solid;">
-          <table class="article" style="padding-bottom: 10px; padding-top: 10px; {{if index == 0 }} padding-top: 10px;  {{/if}}">
-            <tr>
-              <td valign="top" style="margin-right: 10px;">
-                <a href="${featureItem.Link}"><img width=150 style="max-width: 80px; height: auto; margin-right: 5px;" src="http://www.energyintel.com/_LAYOUTS/Eig/Images/WPSImages/565082.jpg" /></a>
-              </td>
-              <td>
-                <p style="font-family:arial;">
-                  <a style="font-weight: bold; color: rgb(73, 73, 73); font-size: 10px; text-decoration: none;" href="${featureItem.Link}">Petroleum Intelligence Weekly</a>
-                </p>
-                <p style="font-family:arial;">
-                  <a style="font-weight: bold; color: rgb(73, 73, 73); text-decoration: none;" href="${featureItem.Link}">Japan Warms to Russian Arctic LNG</a>
-                </p>
-                <p style="font-family:arial; font-size: 0.8em;">
-                  <a style="color: rgb(73, 73, 73); text-decoration: none;" href="${featureItem.Link}">The Japan Bank for International Cooperation will provide a $400 million loan to Novatek's flagship $27 billion Yamal LNG scheme and is expected to ...</a>
-                </p>
-              </td>
-            </tr>
-          </table>
-        </td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td colspan="3">
-          &nbsp;
-        </td>
-      </tr>
-      <tr>
-        <td width=10>&nbsp;</td>
-        <td style="background: #e8e8e8; border-width: 1px; border-color: #dadada; border-style: solid;">
-          <table class="article" style="padding-bottom: 10px; padding-top: 10px; {{if index == 0 }} padding-top: 10px;  {{/if}}">
-            <tr>
-              <td valign="top" style="margin-right: 10px;">
-                <a href="${featureItem.Link}"><img width=150 style="max-width: 80px; height: auto; margin-right: 5px;" src="http://www.energyintel.com/_LAYOUTS/Eig/Images/WPSImages/555963.jpg" /></a>
-              </td>
-              <td>
-                <p style="font-family:arial;">
-                  <a style="font-weight: bold; color: rgb(73, 73, 73); font-size: 10px; text-decoration: none;" href="${featureItem.Link}">Petroleum Intelligence Weekly</a>
-                </p>
-                <p style="font-family:arial;">
-                  <a style="font-weight: bold; color: rgb(73, 73, 73); text-decoration: none;" href="${featureItem.Link}">Japan Warms to Russian Arctic LNG</a>
-                </p>
-                <p style="font-family:arial; font-size: 0.8em;">
-                  <a style="color: rgb(73, 73, 73); text-decoration: none;" href="${featureItem.Link}">The Japan Bank for International Cooperation will provide a $400 million loan to Novatek's flagship $27 billion Yamal LNG scheme and is expected to ...</a>
-                </p>
-              </td>
-            </tr>
-          </table>
-        </td>
-        <td>&nbsp;</td>
-      </tr>
-      <!-- Border line -->
-      <tr>
-        <td colspan="3" style="padding-top: 30px; padding-right: 5px; padding-left: 5px; border-bottom-color: #c0c0c0; border-bottom-width: 3px; border-bottom-style: solid;">
-          &nbsp;
-        </td>
-      </tr>
+ <table align="center" class="main" style="margin: 0 auto; min-width: 500px; max-width: 600px;" cellspacing="10">
+  <!-- email header -->
+  <tbody>
+   <tr style="background-color: #fff;">
+    <!-- left slot for logo -->
+    <td align="left">
+     <a href="http://www.energyintel.com/">
+      <img src="http://eigdevkiev.ciklum.net/_layouts/eig/images/header-weeklyreview.jpg" alt="Energy Intelligence's Weekly Review" width="500" style="margin: 0 auto;"/>
+     </a>
+		</td>
+   </tr>
+   <!-- end email header -->
+   <tr>
+    <!-- Issue date -->
+    <td style="padding-top: 10px; padding-right: 5px; padding-left: 5px;">
+     <!-- <p align="left" style="font-family:arial;font-weight: bold;color: rgb(73, 73, 73);text-decoration: none;text-align: right;font-size: 0.8em;">Friday, 27 March 2016</p> -->
+    </td>
+   </tr>
+   <!-- Written copy -->
+   <tr>
+    <td style="padding-top: 10px; padding-right: 5px; padding-left: 5px; font-family: arial; font-size: 14px;">
+     <!-- ALEX TO ADD ARTICLE BODY COPY HERE -->
+		  <!-- News -->
+   {{each(index, newsItem) News}}
 
-      <!-- COPYRIGHT AND FOOTER -->
+   {{if index == 0 }}
+   <h1>${newsItem.Headline}</h1>
+   ${newsItem.DocumentBody}</a>
+
+   {{/if}}
+   {{/each}}
+   <!-- Border line -->
+	</td>
+   </tr>
+   <!-- Related articles header -->
+   <tr>
+    <!-- Issue date -->
+    <td style="padding-top: 30px; padding-right: 5px; padding-left: 5px; border-bottom-color: #c0c0c0; border-bottom-width: 3px; border-bottom-style: solid;">
+     <p align="left" style="font-family:arial; font-weight: bold; color: rgb(73, 73, 73); text-decoration: none;">Related articles</p>
+    </td>
+   </tr>
+   <!-- FEATURES -->
+   {{each(index, featureItem) Features}}
+
+   <tr>
+    <td style="background: #e8e8e8; border-width: 1px; border-color: #dadada; border-style: solid;">
+     <table class="article" style="padding-bottom: 10px; padding-top: 10px; {{if index == 0 }} padding-top: 10px; {{/if}}">
       <tr>
-        <td class="additionalContent" colspan="3" style="border-bottom: 1px solid #c0c0c0; padding-bottom: 10px; padding-top: 10px;">
-          <p style="font-family:arial; font-size: 0.7em; color: #000;">Copyright &copy; 2016 Energy Intelligence Group, Inc. All rights reserved.</p>
-          <p style="font-family:arial; font-size: 0.7em; color: #000;">
-            Reproduction or distribution internally or externally in any manner (photostatically, electronically, or via facsimile), including by sharing printed copies, or forwarding or posting on local- and wide-area networks and intranets, or sharing user name
-            and password, is strictly prohibited without appropriate license from EIG. Contact <a href="mailto://customerservice@energyintel.com">customerservice@energyintel.com</a> for more information.
-          </p>
-          </p>
-        </td>
+       <td valign="top" style="margin-right: 10px;">
+        <a href="${featureItem.Link}"><img width=150 style="max-width: 80px; height: auto; margin-right: 5px;" src="${featureItem.Thumbnail}" /></a>
+       </td>
+       <td>
+        <p style="font-family:arial; margin-top: 0; line-height: 7px;">
+         <a style="font-weight: bold; color: rgb(73, 73, 73); font-size: 10px; text-decoration: none;" href="${featureItem.Link}">Weekly Review</a>
+        </p>
+        <p style="font-family:arial;">
+         <a style="font-weight: bold; color: rgb(73, 73, 73); text-decoration: none;" href="${featureItem.Link}">${featureItem.Headline}</a>
+        </p>
+        <p style="font-family:arial; font-size: 0.8em;">
+         <a style="color: rgb(73, 73, 73); text-decoration: none;" href="${featureItem.Link}">${featureItem.Summary}</a>
+        </p>
+       </td>
       </tr>
-    </tbody>
-  </table>
+     </table>
+    </td>
+   </tr>
+	 {{/each}}
+   <!-- Border line -->
+   <tr>
+    <td style="padding-right: 5px; padding-left: 5px; border-bottom-color: #c0c0c0; border-bottom-width: 3px; border-bottom-style: solid;">
+     &nbsp;
+    </td>
+   </tr>
+
+   <!-- COPYRIGHT AND FOOTER -->
+   <tr>
+    <td class="additionalContent" style="border-bottom: 1px solid #c0c0c0; padding-bottom: 10px; padding-top: 10px;">
+     <p style="font-family:arial; font-size: 0.7em; color: #000;">Copyright &copy; 2016 Energy Intelligence Group, Inc. All rights reserved.</p>
+     <p style="font-family:arial; font-size: 0.7em; color: #000;">
+      Reproduction or distribution internally or externally in any manner (photostatically, electronically, or via facsimile), including by sharing printed copies, or forwarding or posting on local- and wide-area networks and intranets, or sharing user name
+      and password, is strictly prohibited without appropriate license from EIG. Contact <a href="mailto://customerservice@energyintel.com">customerservice@energyintel.com</a> for more information.
+     </p>
+     </p>
+    </td>
+   </tr>
+  </tbody>
+ </table>
 </body>
 
 </html>
