@@ -88,17 +88,12 @@
     <!-- left slot for logo -->
     <td align="left">
      <a href="http://www.energyintel.com/">
-      <img src="http://eigdevkiev.ciklum.net/_layouts/eig/images/header-weeklyreview.jpg" alt="Energy Intelligence's Weekly Review" width="500" style="margin: 0 auto;"/>
+      <img src="http://eigdevkiev.ciklum.net/_layouts/eig/images/header-weeklyreview.jpg" alt="Energy Intelligence's Weekly Review" width="560" style="margin: 0 auto;"/>
      </a>
 		</td>
    </tr>
    <!-- end email header -->
-   <tr>
-    <!-- Issue date -->
-    <td style="padding-top: 10px; padding-right: 5px; padding-left: 5px;">
-     <!-- <p align="left" style="font-family:arial;font-weight: bold;color: rgb(73, 73, 73);text-decoration: none;text-align: right;font-size: 0.8em;">Friday, 27 March 2016</p> -->
-    </td>
-   </tr>
+
    <!-- Written copy -->
    <tr>
     <td style="padding-top: 10px; padding-right: 5px; padding-left: 5px; font-family: arial; font-size: 14px;">
@@ -107,7 +102,7 @@
    {{each(index, newsItem) News}}
 
    {{if index == 0 }}
-   <h1>${newsItem.Headline}</h1>
+   <h1 style="color: #494949; font-size: 16px;">${newsItem.Headline}</h1>
    ${newsItem.DocumentBody}</a>
 
    {{/if}}
@@ -133,9 +128,6 @@
         <a href="${featureItem.Link}"><img width=150 style="max-width: 80px; height: auto; margin-right: 5px;" src="${featureItem.Thumbnail}" /></a>
        </td>
        <td>
-        <p style="font-family:arial; margin-top: 0; line-height: 7px;">
-         <a style="font-weight: bold; color: rgb(73, 73, 73); font-size: 10px; text-decoration: none;" href="${featureItem.Link}">Weekly Review</a>
-        </p>
         <p style="font-family:arial;">
          <a style="font-weight: bold; color: rgb(73, 73, 73); text-decoration: none;" href="${featureItem.Link}">${featureItem.Headline}</a>
         </p>
