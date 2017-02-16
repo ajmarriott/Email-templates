@@ -1,0 +1,246 @@
+<html>
+<head>
+
+    <style>
+        table.main {
+            max-width: 450px;
+        }
+
+        @media screen and (orientation: portrait) {
+            table.main {
+                max-width: 100%;
+            }
+
+            table.article img {
+                width: 80px;
+                height: auto;
+            }
+
+            .pubTitle {
+                font-size: 1.3em !important;
+            }
+        }
+
+        .fake_css {
+            width: 100%;
+            display: block;
+            -webkit-text-size-adjust: none;
+            margin: 1em 0;
+            color: black;
+            text-decoration: none;
+            border-bottom: none;
+            background: none;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            background: none;
+            border-bottom: thin;
+            border-bottom-style: double;
+            background-repeat: repeat;
+            border-left-color: #C06;
+            background-attachment: scroll;
+            border: thin;
+            page-break-before: auto;
+            page-break-before: avoid;
+            page-break-inside: inherit;
+            azimuth: center-left;
+            vertical-align: inherit;
+            font-stretch: extra-condensed;
+            font-size-adjust: none;
+            list-style-image: none;
+            counter-reset: none;
+            letter-spacing: normal;
+            empty-cells: inherit;
+            elevation: higher;
+        }
+    </style>
+    <!--[if gt mso 9]>
+    <style>
+    table.main {
+      width: 600px;
+      background-color: #ffffff;
+      margin-top: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+    }
+    body {
+      background-color: #c0c0c0;
+    }
+
+    </style>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <table align="center" class="main" style="margin: 0 auto;" cellspacing="0">
+        <!-- email header -->
+        <tbody>
+            <tr style="background-color: #fff;">
+                <td colspan="2">
+                    <table align="left" class="main" style="margin: 0 auto;" cellspacing="0">
+                        <tbody>
+                            <tr style="background-color: #fff;">
+                                <td width="90" align="left">
+                                    <a href="http://www.energyintel.com/">
+                                        <img class="logo" width="206" height="54" style="max-width: 206px;" src="http://www.energyintel.com/_layouts/eig/images/new-ats-email-logo.jpg" alt="Your latest issue of ${PublicationName} is attached - Energy Intelligence - ${IssueDate}" />
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top">
+                                    <p style="font-family:arial; font-weight: bold; margin-bottom: 5px; margin-top: 10px;">
+                                        <a style="color: rgb(73, 73, 73); text-decoration: none; font-size: 1.5em;" class="pubTitle" href="${PublicationLink}">${PublicationName}</a>
+                                    </p><p style="font-family:arial; font-weight: bold; margin-bottom: 0px; margin-top: 0; font-size: 0.8em; color: rgb(73, 73, 73);">${IssueDate}</p>
+                                    <p></p>
+                                    <p></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- ADVERT HERE -->
+       		<!-- <tr>
+        <td colspan="2" valign="top" style="border-top-color: #c0c0c0; border-top-width: 3px; border-top-style: solid; padding-top: 20px; padding-bottom: 20px;">
+          <p></p>
+          <p style="text-align: center;">
+            <a href="http://www2.energyintel.com/l/19202/2017-02-09/bgs2l2?utm_campaign=Feb%20VRT%20&utm_medium=Banner%20&utm_source=Landing%20page&utm_content=Feb%20VRT"><img src="http://storage.pardot.com/19202/168047/f_email300x250_VRT_Feb2017_.jpg" /></a>
+          </p>
+        </td>
+</tr> -->
+            <!-- end email header -->
+            <tr>
+                <td colspan="2" style=" padding-top: 10px; border-top-style: solid; border-top-color: #c0c0c0; border-top-width: 3px;">
+                    <p style="font-weight: bold; color: rgb(73, 73, 73); text-decoration: none; font-family:arial; padding-top: 10px;">
+                        Your latest issue of ${PublicationName} is attached.
+                    </p>
+            </tr>
+            <!-- WEO -->
+            <tr>
+                <td colspan="2">
+                    <table class="article" style="padding-bottom: 10px; padding-top: 10px; border-top-color: #c0c0c0; border-top-width: 3px; border-top-style: solid;">
+                        <!-- WEO HEADER -->
+                        <tr>
+                            <td colspan="2">
+                                <p style="font-family:arial; color: rgb(73, 73, 73); margin-bottom: 10px; font-weight: bold;">World Energy Opinion</p>
+                            </td>
+                        </tr>
+                        <!-- END WEO HEADER -->
+                        <tr>
+                            <td valign="top" style="margin-right: 10px;">
+                                <a href="${weoArticle1.Link}"><img width=150 style="max-width: 80px; height: auto; margin-right: 5px;" src="${weoArticle1.Thumbnail}" /></a>
+                            </td>
+                            <td>
+                                <p style="font-family:arial;">
+                                    <a style="font-weight: bold; color: rgb(73, 73, 73); text-decoration: none;" href="${weoArticle1.Link}">${weoArticle1.Headline}</a>
+                                </p>
+                                <p style="font-family:arial; font-size: 0.8em;">
+                                    <a style="color: rgb(73, 73, 73); text-decoration: none;" href="${weoArticle1.Link}">${weoArticle1.Summary}</a>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table class="article" style="padding-bottom: 10px;">
+                        <tr>
+                            <td valign="top" style="margin-right: 10px;">
+                                <a href="${weoArticle2.Link}"><img width=150 style="max-width: 80px; height: auto; margin-right: 5px;" src="${weoArticle2.Thumbnail}" /></a>
+                            </td>
+                            <td>
+                                <p style="font-family:arial;">
+                                    <a style="font-weight: bold; color: rgb(73, 73, 73); text-decoration: none;" href="${weoArticle2.Link}">${weoArticle2.Headline}</a>
+                                </p>
+                                <p style="font-family:arial; font-size: 0.8em;">
+                                    <a style="color: rgb(73, 73, 73); text-decoration: none;" href="${weoArticle2.Link}">${weoArticle2.Summary}</a>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- IN FOCUS -->
+            <tr>
+                <td colspan="2">
+                    <table class="article" style="padding-bottom: 10px; padding-top: 10px; border-top-color: #c0c0c0; border-top-width: 3px; border-top-style: solid;">
+                        <tr>
+                            <td colspan="2">
+                                <p style="font-family:arial; color: rgb(73, 73, 73); margin-bottom: 10px; font-weight: bold;">In Focus</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" style="margin-right: 10px;">
+                                <a href="${inFocus1.Link}"><img width=150 style="max-width: 80px; height: auto; margin-right: 5px;" src="${inFocus1.Thumbnail}" /></a>
+                            </td>
+                            <td>
+                                <p style="font-family:arial;">
+                                    <a style="font-weight: bold; color: rgb(73, 73, 73); text-decoration: none;" href="${inFocus1.Link}">${inFocus1.Headline}</a>
+                                </p>
+                                <p style="font-family:arial; font-size: 0.8em;">
+                                    <a style="color: rgb(73, 73, 73); text-decoration: none;" href="${inFocus1.Link}">${inFocus1.Summary}</a>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table class="article" style="padding-bottom: 10px;">
+                        <tr>
+                            <td valign="top" style="margin-right: 10px;">
+                                <a href="${inFocus2.Link}"><img width=150 style="max-width: 80px; height: auto; margin-right: 5px;" src="${inFocus2.Thumbnail}" /></a>
+                            </td>
+                            <td>
+                                <p style="font-family:arial;">
+                                    <a style="font-weight: bold; color: rgb(73, 73, 73); text-decoration: none;" href="${inFocus2.Link}">${inFocus2.Headline}</a>
+                                </p>
+                                <p style="font-family:arial; font-size: 0.8em;">
+                                    <a style="color: rgb(73, 73, 73); text-decoration: none;" href="${inFocus2.Link}">${inFocus2.Summary}</a>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- PROBLEMS AND UPDATES -->
+            <tr>
+                <td colspan="2" style="border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #c0c0c0; padding-bottom: 10px; padding-top: 10px; border-top-color: #c0c0c0; border-top-width: 3px; border-top-style: solid;">
+                    <p>
+                        <a style="font-family:arial; color: #c0c0c0; margin-bottom: 10px; font-weight: bold; text-decoration: none;" href="mailto://customerservice@energyintel.com">Contact Us</a>
+                    </p>
+
+                </td>
+            </tr>
+            <!-- END PROBLEMS AND UPDATES -->
+            <!-- COPYRIGHT AND FOOTER -->
+            <tr>
+                <td colspan="2" style="border-bottom: 1px solid #c0c0c0; padding-bottom: 10px; padding-top: 10px;">
+                    <p style="font-family:arial; font-size: 0.7em; color: #000;">
+                        Copyright &copy; 2017 Energy Intelligence Group, Inc. All rights reserved.
+                    </p>
+                    <p style="font-family:arial; font-size: 0.7em; color: #000; ">
+                        Reproduction or distribution internally or externally in any manner (photostatically, electronically, or via facsimile), including by sharing printed copies, or forwarding or posting on local- and wide-area networks and intranets, or sharing user name
+                        and password, is strictly prohibited without appropriate license from Energy Intelligence. Contact <a href="mailto://customerservice@energyintel.com">customerservice@energyintel.com</a> for more information.
+                    </p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!-- %%unsubscribe%% -->
+
+
+</body>
+</html>
